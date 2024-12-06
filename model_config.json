@@ -28,8 +28,8 @@
     "description": "Enhanced performance with improved accuracy and speed",
     "pretrained_models": [
       {
-        "filename": "yolov9n.pt",
-        "url": "https://github.com/ultralytics/assets/releases/download/v0.0/yolov9n.pt"
+        "filename": "yolov9t.pt",
+        "url": "https://github.com/ultralytics/assets/releases/download/v0.0/yolov9t.pt"
       },
       {
         "filename": "yolov9s.pt",
@@ -40,12 +40,12 @@
         "url": "https://github.com/ultralytics/assets/releases/download/v0.0/yolov9m.pt"
       },
       {
-        "filename": "yolov9l.pt",
-        "url": "https://github.com/ultralytics/assets/releases/download/v0.0/yolov9l.pt"
+        "filename": "yolov9c.pt",
+        "url": "https://github.com/ultralytics/assets/releases/download/v0.0/yolov9c.pt"
       },
       {
-        "filename": "yolov9x.pt",
-        "url": "https://github.com/ultralytics/assets/releases/download/v0.0/yolov9x.pt"
+        "filename": "yolov9e.pt",
+        "url": "https://github.com/ultralytics/assets/releases/download/v0.0/yolov9e.pt"
       }
     ]
   },
