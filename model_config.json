@@ -28,24 +28,12 @@
     "description": "Enhanced performance with improved accuracy and speed",
     "pretrained_models": [
       {
-        "filename": "yolov9t.pt",
-        "url": "https://github.com/ultralytics/assets/releases/download/v0.0/yolov9t.pt"
+        "filename": "yolov9-c.pt",
+        "url": "https://huggingface.co/merve/yolov9/resolve/main/yolov9-c.pt"
       },
       {
-        "filename": "yolov9s.pt",
-        "url": "https://github.com/ultralytics/assets/releases/download/v0.0/yolov9s.pt"
-      },
-      {
-        "filename": "yolov9m.pt",
-        "url": "https://github.com/ultralytics/assets/releases/download/v0.0/yolov9m.pt"
-      },
-      {
-        "filename": "yolov9c.pt",
-        "url": "https://github.com/ultralytics/assets/releases/download/v0.0/yolov9c.pt"
-      },
-      {
-        "filename": "yolov9e.pt",
-        "url": "https://github.com/ultralytics/assets/releases/download/v0.0/yolov9e.pt"
+        "filename": "yolov9-e.pt",
+        "url": "https://huggingface.co/merve/yolov9/resolve/main/yolov9-e.pt"
       }
     ]
   },
@@ -54,23 +42,23 @@
     "pretrained_models": [
       {
         "filename": "yolo11n.pt",
-        "url": "https://github.com/ultralytics/assets/releases/download/v0.0/yolo11n.pt"
+        "url": "https://github.com/ultralytics/ultralytics/releases/download/v8.0.0/yolo11n.pt"
       },
       {
         "filename": "yolo11s.pt",
-        "url": "https://github.com/ultralytics/assets/releases/download/v0.0/yolo11s.pt"
+        "url": "https://github.com/ultralytics/ultralytics/releases/download/v8.0.0/yolo11s.pt"
       },
       {
         "filename": "yolo11m.pt",
-        "url": "https://github.com/ultralytics/assets/releases/download/v0.0/yolo11m.pt"
+        "url": "https://github.com/ultralytics/ultralytics/releases/download/v8.0.0/yolo11m.pt"
       },
       {
         "filename": "yolo11l.pt",
-        "url": "https://github.com/ultralytics/assets/releases/download/v0.0/yolo11l.pt"
+        "url": "https://github.com/ultralytics/ultralytics/releases/download/v8.0.0/yolo11l.pt"
       },
       {
         "filename": "yolo11x.pt",
-        "url": "https://github.com/ultralytics/assets/releases/download/v0.0/yolo11x.pt"
+        "url": "https://github.com/ultralytics/ultralytics/releases/download/v8.0.0/yolo11x.pt"
       }
     ]
   },
