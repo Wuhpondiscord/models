@@ -1,0 +1,36 @@
+{
+  "YOLOv8": {
+    "description": "General-purpose, accurate, versatile",
+    "pretrained_models": [
+      "yolov8n.pt",
+      "yolov8s.pt",
+      "yolov8m.pt",
+      "yolov8l.pt",
+      "yolov8x.pt"
+    ]
+  },
+  "YOLO11": {
+    "description": "Incremental improvements over YOLOv8, better generalization",
+    "pretrained_models": [
+      "yolo11n.pt",
+      "yolo11s.pt",
+      "yolo11m.pt",
+      "yolo11l.pt",
+      "yolo11x.pt"
+    ]
+  },
+  "YOLO-World": {
+    "description": "Domain-specific customizations for industries like retail or automotive",
+    "pretrained_models": [
+      "yoloworld-base.pt",
+      "yoloworld-advanced.pt"
+    ]
+  },
+  "RT-DETR": {
+    "description": "Real-time Detection Transformer",
+    "pretrained_models": [
+      "rtdetr-l.pt",
+      "rtdetr-x.pt"
+    ]
+  }
+}
