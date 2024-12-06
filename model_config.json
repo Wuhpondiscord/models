@@ -9,7 +9,17 @@
       "yolov8x.pt"
     ]
   },
-  "YOLO11": {
+  "YOLOv9": {
+    "description": "Enhanced performance with improved accuracy and speed",
+    "pretrained_models": [
+      "yolov9n.pt",
+      "yolov9s.pt",
+      "yolov9m.pt",
+      "yolov9l.pt",
+      "yolov9x.pt"
+    ]
+  },
+  "YOLOv11": {
     "description": "Incremental improvements over YOLOv8, better generalization",
     "pretrained_models": [
       "yolo11n.pt",
@@ -24,13 +34,6 @@
     "pretrained_models": [
       "yoloworld-base.pt",
       "yoloworld-advanced.pt"
-    ]
-  },
-  "RT-DETR": {
-    "description": "Real-time Detection Transformer",
-    "pretrained_models": [
-      "rtdetr-l.pt",
-      "rtdetr-x.pt"
     ]
   }
 }
