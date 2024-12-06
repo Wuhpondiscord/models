@@ -2,38 +2,89 @@
   "YOLOv8": {
     "description": "General-purpose, accurate, versatile",
     "pretrained_models": [
-      "yolov8n.pt",
-      "yolov8s.pt",
-      "yolov8m.pt",
-      "yolov8l.pt",
-      "yolov8x.pt"
+      {
+        "filename": "yolov8n.pt",
+        "url": "https://github.com/ultralytics/assets/releases/download/v0.0/yolov8n.pt"
+      },
+      {
+        "filename": "yolov8s.pt",
+        "url": "https://github.com/ultralytics/assets/releases/download/v0.0/yolov8s.pt"
+      },
+      {
+        "filename": "yolov8m.pt",
+        "url": "https://github.com/ultralytics/assets/releases/download/v0.0/yolov8m.pt"
+      },
+      {
+        "filename": "yolov8l.pt",
+        "url": "https://github.com/ultralytics/assets/releases/download/v0.0/yolov8l.pt"
+      },
+      {
+        "filename": "yolov8x.pt",
+        "url": "https://github.com/ultralytics/assets/releases/download/v0.0/yolov8x.pt"
+      }
     ]
   },
   "YOLOv9": {
     "description": "Enhanced performance with improved accuracy and speed",
     "pretrained_models": [
-      "yolov9n.pt",
-      "yolov9s.pt",
-      "yolov9m.pt",
-      "yolov9l.pt",
-      "yolov9x.pt"
+      {
+        "filename": "yolov9t.pt",
+        "url": "https://github.com/ultralytics/assets/releases/download/v0.0/yolov9t.pt"
+      },
+      {
+        "filename": "yolov9s.pt",
+        "url": "https://github.com/ultralytics/assets/releases/download/v0.0/yolov9s.pt"
+      },
+      {
+        "filename": "yolov9m.pt",
+        "url": "https://github.com/ultralytics/assets/releases/download/v0.0/yolov9m.pt"
+      },
+      {
+        "filename": "yolov9c.pt",
+        "url": "https://github.com/ultralytics/assets/releases/download/v0.0/yolov9c.pt"
+      },
+      {
+        "filename": "yolov9e.pt",
+        "url": "https://github.com/ultralytics/assets/releases/download/v0.0/yolov9e.pt"
+      }
     ]
   },
   "YOLOv11": {
     "description": "Incremental improvements over YOLOv8, better generalization",
     "pretrained_models": [
-      "yolo11n.pt",
-      "yolo11s.pt",
-      "yolo11m.pt",
-      "yolo11l.pt",
-      "yolo11x.pt"
+      {
+        "filename": "yolo11n.pt",
+        "url": "https://github.com/ultralytics/assets/releases/download/v0.0/yolo11n.pt"
+      },
+      {
+        "filename": "yolo11s.pt",
+        "url": "https://github.com/ultralytics/assets/releases/download/v0.0/yolo11s.pt"
+      },
+      {
+        "filename": "yolo11m.pt",
+        "url": "https://github.com/ultralytics/assets/releases/download/v0.0/yolo11m.pt"
+      },
+      {
+        "filename": "yolo11l.pt",
+        "url": "https://github.com/ultralytics/assets/releases/download/v0.0/yolo11l.pt"
+      },
+      {
+        "filename": "yolo11x.pt",
+        "url": "https://github.com/ultralytics/assets/releases/download/v0.0/yolo11x.pt"
+      }
     ]
   },
   "YOLO-World": {
     "description": "Domain-specific customizations for industries like retail or automotive",
     "pretrained_models": [
-      "yoloworld-base.pt",
-      "yoloworld-advanced.pt"
+      {
+        "filename": "yoloworld-base.pt",
+        "url": "https://github.com/AILab-CVC/YOLO-World/releases/download/v0.0/yoloworld-base.pt"
+      },
+      {
+        "filename": "yoloworld-advanced.pt",
+        "url": "https://github.com/AILab-CVC/YOLO-World/releases/download/v0.0/yoloworld-advanced.pt"
+      }
     ]
   }
 }
