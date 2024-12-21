@@ -1,1 +1,11 @@
+{
+    "auto": "**auto**: Let YOLO pick a default/automatic optimizer strategy.",
+    "Adam": "**Adam** (Adaptive Moment Estimation) computes adaptive learning rates for each parameter. It's usually a good default choice for many tasks.",
+    "AdamW": "**AdamW** is Adam with a fix for weight decay, often yielding better generalization than standard Adam in certain scenarios.",
+    "Adamax": "**Adamax** is a variant of Adam based on the infinity norm. Sometimes more stable than standard Adam for certain tasks.",
+    "NAdam": "**NAdam** is Adam with Nesterov momentum, potentially yielding faster convergence in some cases.",
+    "RAdam": "**RAdam** (Rectified Adam) tries to rectify the variance of the adaptive learning rate to avoid extremely large updates early in training.",
+    "RMSProp": "**RMSProp** divides the learning rate by a moving average of recent gradients' magnitudes, helping with non-stationary objectives.",
+    "SGD": "**SGD** (Stochastic Gradient Descent) updates parameters using the gradient of the loss with respect to each parameter. Commonly combined with momentum."
+}
 
