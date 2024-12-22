@@ -1,1 +1,68 @@
+{
+    "Default": {
+        "epochs": 150,
+        "batch_size": 32,
+        "img_size": 640,
+        "learning_rate": 0.0005,
+        "optimizer": "Adam",
+        "data_augmentation_level": "Moderate",
+        "custom_model_name": "rolo_yolo_model",
+        "selected_architecture": "yolov8n",
+        "pre_trained_model": "yolov8n.pt",
+        "custom_model_path": "",
+        "show_debug": false
+    },
+    "Fast Training": {
+        "epochs": 50,
+        "batch_size": 16,
+        "img_size": 416,
+        "learning_rate": 0.001,
+        "optimizer": "SGD",
+        "data_augmentation_level": "Basic",
+        "custom_model_name": "rolo_yolo_fast",
+        "selected_architecture": "yolov8s",
+        "pre_trained_model": "yolov8s.pt",
+        "custom_model_path": "",
+        "show_debug": false
+    },
+    "High Accuracy": {
+        "epochs": 300,
+        "batch_size": 64,
+        "img_size": 1024,
+        "learning_rate": 0.0001,
+        "optimizer": "RMSProp",
+        "data_augmentation_level": "Advanced",
+        "custom_model_name": "rolo_yolo_high_acc",
+        "selected_architecture": "yolov8x",
+        "pre_trained_model": "yolov8x.pt",
+        "custom_model_path": "",
+        "show_debug": true
+    },
+    "Custom Precision": {
+        "epochs": 200,
+        "batch_size": 24,
+        "img_size": 800,
+        "learning_rate": 0.0003,
+        "optimizer": "AdamW",
+        "data_augmentation_level": "Moderate",
+        "custom_model_name": "rolo_yolo_custom_precision",
+        "selected_architecture": "yolov8m",
+        "pre_trained_model": "yolov8m.pt",
+        "custom_model_path": "",
+        "show_debug": false
+    },
+    "Resource Efficient": {
+        "epochs": 100,
+        "batch_size": 8,
+        "img_size": 512,
+        "learning_rate": 0.0007,
+        "optimizer": "Adam",
+        "data_augmentation_level": "None",
+        "custom_model_name": "rolo_yolo_resource_efficient",
+        "selected_architecture": "yolov8n",
+        "pre_trained_model": "yolov8n.pt",
+        "custom_model_path": "",
+        "show_debug": false
+    }
+}
 
