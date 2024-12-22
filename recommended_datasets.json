@@ -1,0 +1,134 @@
+[
+    {
+        "name": "COCO 2017",
+        "description": "Common Objects in Context 2017",
+        "source": "GitHub",
+        "url": "https://github.com/ultralytics/cocoapi/archive/refs/heads/master.zip"
+    },
+    {
+        "name": "Pascal VOC 2007",
+        "description": "Pascal Visual Object Classes 2007",
+        "source": "GitHub",
+        "url": "https://github.com/ultralytics/vocapi/archive/refs/heads/master.zip"
+    },
+    {
+        "name": "License Plate Recognition",
+        "description": "Dataset for recognizing license plates.",
+        "source": "Roboflow",
+        "url": "https://universe.roboflow.com/roboflow-universe-projects/license-plate-recognition-rxg4e/dataset/8"
+    },
+    {
+        "name": "People Detection",
+        "description": "Dataset for detecting people in various environments.",
+        "source": "Roboflow",
+        "url": "https://universe.roboflow.com/leo-ueno/people-detection-o4rdr/dataset/8"
+    },
+    {
+        "name": "Safety Vests Detection",
+        "description": "Dataset for detecting safety vests.",
+        "source": "Roboflow",
+        "url": "https://universe.roboflow.com/roboflow-universe-projects/safety-vests/dataset/7"
+    },
+    {
+        "name": "Animal Detection",
+        "description": "Dataset for detecting various animals.",
+        "source": "Roboflow",
+        "url": "https://universe.roboflow.com/lkl/animals-kethm/dataset/3"
+    },
+    {
+        "name": "Traffic Surveillance",
+        "description": "Dataset for traffic monitoring and analysis.",
+        "source": "Roboflow",
+        "url": "https://universe.roboflow.com/ari-jmlsw/traffic-hlyld/dataset/2"
+    },
+    {
+        "name": "Fence Detection",
+        "description": "Dataset for detecting fences in images.",
+        "source": "Roboflow",
+        "url": "https://universe.roboflow.com/ayoub-9grd0/fence-detection-bkrx1/dataset/2"
+    },
+    {
+        "name": "People Counting",
+        "description": "Dataset for counting the number of people in images.",
+        "source": "Roboflow",
+        "url": "https://universe.roboflow.com/wipfli/people-count-yobfj/dataset/1"
+    },
+    {
+        "name": "Gun Detection",
+        "description": "Dataset for detecting firearms in images.",
+        "source": "Roboflow",
+        "url": "https://universe.roboflow.com/cs231n-dmuip/gun-detection-xwosb/dataset/8"
+    },
+    {
+        "name": "Police Detection",
+        "description": "Dataset for detecting police-related imagery.",
+        "source": "Roboflow",
+        "url": "https://universe.roboflow.com/ngel-torregrosa-domnguez/police1/dataset/1"
+    },
+    {
+        "name": "Weapons Detection",
+        "description": "Dataset for detecting various weapons.",
+        "source": "Roboflow",
+        "url": "https://universe.roboflow.com/myweapondetection/weapons-detection-x9fnq/dataset/3"
+    },
+    {
+        "name": "Soldier Detection",
+        "description": "Dataset for detecting soldiers in images.",
+        "source": "Roboflow",
+        "url": "https://universe.roboflow.com/test-nzd2k/soldier-wclp7/dataset/1"
+    },
+    {
+        "name": "Deer Detection",
+        "description": "Dataset for detecting deer in various environments.",
+        "source": "Roboflow",
+        "url": "https://universe.roboflow.com/kamaro/deer-detection-mvfx0/dataset/1"
+    },
+    {
+        "name": "Drug Classification",
+        "description": "Dataset for classifying different types of drugs.",
+        "source": "Roboflow",
+        "url": "https://universe.roboflow.com/drug-e1xlq/drug-classifier/dataset/11"
+    },
+    {
+        "name": "COCO8",
+        "description": "A smaller subset of the first 4 images from COCO train and COCO val, suitable for quick tests.",
+        "source": "Ultralytics",
+        "url": "https://github.com/ultralytics/assets/releases/download/v0.0.0/coco8.zip"
+    },
+    {
+        "name": "COCO128",
+        "description": "A smaller subset of the first 128 images from COCO train and COCO val, suitable for tests.",
+        "source": "Ultralytics",
+        "url": "https://github.com/ultralytics/assets/releases/download/v0.0.0/coco128.zip"
+    },
+    {
+        "name": "Global Wheat 2020",
+        "description": "A dataset containing images of wheat heads for the Global Wheat Challenge 2020.",
+        "source": "Ultralytics",
+        "url": "https://github.com/ultralytics/assets/releases/download/v0.0.0/global-wheat-2020.zip"
+    },
+    {
+        "name": "OpenImagesV7",
+        "description": "A comprehensive dataset by Google with 1.7M train images and 42k validation images.",
+        "source": "Ultralytics",
+        "url": "https://github.com/ultralytics/assets/releases/download/v0.0.0/openimagesv7.zip"
+    },
+    {
+        "name": "VisDrone",
+        "description": "A dataset containing object detection and multi-object tracking data from drone-captured imagery.",
+        "source": "Ultralytics",
+        "url": "https://github.com/ultralytics/assets/releases/download/v0.0.0/visdrone.zip"
+    },
+    {
+        "name": "xView",
+        "description": "A dataset for object detection in overhead imagery with over 1 million annotated objects.",
+        "source": "Ultralytics",
+        "url": "https://github.com/ultralytics/assets/releases/download/v0.0.0/xview.zip"
+    },
+    {
+        "name": "DOTA-v2",
+        "description": "A dataset for aerial imagery analysis with 1.7 million instances and 11,268 images.",
+        "source": "Ultralytics",
+        "url": "https://github.com/ultralytics/assets/releases/download/v0.0.0/dota-v2.zip"
+    }
+]
