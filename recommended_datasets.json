@@ -92,43 +92,43 @@
     {
         "name": "COCO8",
         "description": "A smaller subset of the first 4 images from COCO train and COCO val, suitable for quick tests.",
-        "source": "Ultralytics",
+        "source": "GitHub",
         "url": "https://github.com/ultralytics/assets/releases/download/v0.0.0/coco8.zip"
     },
     {
         "name": "COCO128",
         "description": "A smaller subset of the first 128 images from COCO train and COCO val, suitable for tests.",
-        "source": "Ultralytics",
+        "source": "GitHub",
         "url": "https://github.com/ultralytics/assets/releases/download/v0.0.0/coco128.zip"
     },
     {
         "name": "Global Wheat 2020",
         "description": "A dataset containing images of wheat heads for the Global Wheat Challenge 2020.",
-        "source": "Ultralytics",
+        "source": "GitHub",
         "url": "https://github.com/ultralytics/assets/releases/download/v0.0.0/global-wheat-2020.zip"
     },
     {
         "name": "OpenImagesV7",
         "description": "A comprehensive dataset by Google with 1.7M train images and 42k validation images.",
-        "source": "Ultralytics",
+        "source": "GitHub",
         "url": "https://github.com/ultralytics/assets/releases/download/v0.0.0/openimagesv7.zip"
     },
     {
         "name": "VisDrone",
         "description": "A dataset containing object detection and multi-object tracking data from drone-captured imagery.",
-        "source": "Ultralytics",
+        "source": "GitHub",
         "url": "https://github.com/ultralytics/assets/releases/download/v0.0.0/visdrone.zip"
     },
     {
         "name": "xView",
         "description": "A dataset for object detection in overhead imagery with over 1 million annotated objects.",
-        "source": "Ultralytics",
+        "source": "GitHub",
         "url": "https://github.com/ultralytics/assets/releases/download/v0.0.0/xview.zip"
     },
     {
         "name": "DOTA-v2",
         "description": "A dataset for aerial imagery analysis with 1.7 million instances and 11,268 images.",
-        "source": "Ultralytics",
+        "source": "GitHub",
         "url": "https://github.com/ultralytics/assets/releases/download/v0.0.0/dota-v2.zip"
     }
 ]
