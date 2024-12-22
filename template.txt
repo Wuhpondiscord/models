@@ -17,6 +17,14 @@
 
 {{CLASS_IDS}}
 
+## Datasets Used
+
+{{DATASETS_USED}}
+
+## Class Image Counts
+
+{{CLASS_IMAGE_COUNTS}}
+
 ## Description
 
 This model was trained using the {{MODEL_ARCH}} architecture on a custom dataset. The training process involved {{EPOCHS}} epochs with a batch size of {{BATCH_SIZE}}. The optimizer used was **{{OPTIMIZER}}** with an initial learning rate of {{LEARNING_RATE}}. Data augmentation was set to the **{{DATA_AUG}}** level to enhance model robustness.
