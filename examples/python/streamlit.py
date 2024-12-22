@@ -1,3 +1,5 @@
+# app.py
+
 import torch
 from PIL import Image
 import cv2
@@ -50,7 +52,7 @@ architecture = architecture_map.get(architecture_choice)
 st.sidebar.subheader("2. Load YOLO Model")
 
 # Define a default model path
-DEFAULT_MODEL_PATH = "{{MODEL_URL}}"
+DEFAULT_MODEL_PATH = "{{MODEL_URL}}"  # Replace with your default model path
 
 model = None
 model_loaded = False
@@ -621,4 +623,101 @@ def main():
                                     frame_placeholder = st.empty()
 
                                     st.info(f"🔄 Processing video: {file}")
-             
+                                    while cap.isOpened():
+                                        ret, frame = cap.read()
+                                        if not ret:
+                                            st.warning("⚠️ Reached the end of the video.")
+                                            break
+
+                                        # Perform object detection
+                                        annotated_frame, detected_classes = detect_objects(frame, model, confidence_thresholds, enabled_classes)
+
+                                        # Generate detection messages
+                                        for cls in detected_classes:
+                                            message = f"{cls} detected"
+                                            detected_messages.append(message)
+                                            if tts_enabled:
+                                                lang = voice_options.get(selected_voice, "en")
+                                                audio_path = generate_tts(message, lang)
+                                                audio_files.append(audio_path)
+
+                                        # Convert to RGB and display
+                                        annotated_image = Image.fromarray(cv2.cvtColor(annotated_frame, cv2.COLOR_BGR2RGB))
+                                        frame_placeholder.image(annotated_image, caption="🔍 Detection Results", use_column_width=True)
+
+                                        # Display detection messages
+                                        for msg in detected_messages:
+                                            st.write(f"✅ {msg}")
+
+                                        # Play TTS audio
+                                        for audio in audio_files:
+                                            st.audio(audio, format="audio/mp3")
+                                            os.remove(audio)
+                                        audio_files = []
+
+                                        detected_messages = []
+
+                                        # Control frame rate
+                                        time.sleep(0.03)  # Approximately 30 FPS
+
+                                    cap.release()
+
+    elif input_method == "Image URL":
+        st.header("🌐 Image URL Object Detection")
+
+        image_urls = st.text_area(
+            "Enter Image URLs (one per line)",
+            value="https://example.com/image1.jpg\nhttps://example.com/image2.png",
+            help="Enter one or more image URLs, each on a new line."
+        ).splitlines()
+
+        if st.button("Start URL Image Detection"):
+            if not image_urls:
+                st.error("Please enter at least one image URL.")
+            else:
+                for idx, url in enumerate(image_urls):
+                    url = url.strip()
+                    if not url:
+                        continue
+                    st.write(f"### Processing: {url}")
+
+                    img_array = fetch_image_from_url(url)
+                    if img_array is not None:
+                        try:
+                            annotated_img, detected_classes = detect_objects(img_array, model, confidence_thresholds, enabled_classes)
+                            annotated_image = Image.fromarray(annotated_img)
+                            st.image(annotated_image, caption="🔍 Detection Results", use_column_width=True)
+
+                            # Generate detection messages
+                            for cls in detected_classes:
+                                message = f"{cls} detected"
+                                detected_messages.append(message)
+                                if tts_enabled:
+                                    lang = voice_options.get(selected_voice, "en")
+                                    audio_path = generate_tts(message, lang)
+                                    audio_files.append(audio_path)
+
+                            # Display detection messages
+                            for msg in detected_messages:
+                                st.write(f"✅ {msg}")
+
+                            # Play TTS audio
+                            for audio in audio_files:
+                                st.audio(audio, format="audio/mp3")
+                                os.remove(audio)
+                            audio_files = []
+
+                            detected_messages = []
+
+                        except Exception as e:
+                            st.error(f"❌ Error processing image from URL: {e}")
+
+    # ----------------------------
+    # Footer
+    # ----------------------------
+
+    st.markdown("---")
+    st.markdown("Developed by [wuhp](https://huggingface.co/wuhp).")
+
+if __name__ == "__main__":
+    main()
