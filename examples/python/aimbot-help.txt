@@ -1,1 +1,305 @@
-test
+**Aimbot Application Help Guide**
+
+---
+
+Welcome to the **Aimbot Application Help Guide**! This guide provides comprehensive information about the application's features, settings, and use cases to help you configure and utilize the aimbot effectively.
+
+---
+
+## **Table of Contents**
+
+1. [Introduction](#introduction)
+2. [Controls Tab](#controls-tab)
+3. [Settings Tab](#settings-tab)
+   - [YOLO Overlay Settings](#yolo-overlay-settings)
+     - [Confidence Threshold](#confidence-threshold)
+     - [Maximum Detections](#maximum-detections)
+     - [Enable Maximum Detections](#enable-maximum-detections)
+     - [Easing Type](#easing-type)
+     - [Select Monitor](#select-monitor)
+     - [Selected Model](#selected-model)
+     - [Presets](#presets)
+     - [Partial/Downscale Capture](#partialdownscale-capture)
+     - [Bounding Box Colors](#bounding-box-colors)
+     - [Ignore Classes](#ignore-classes)
+     - [Class Priority](#class-priority)
+     - [Select YOLOv8 Model](#select-yolov8-model)
+   - [Mouse Anywhere Settings](#mouse-anywhere-settings)
+     - [Strength](#strength)
+     - [Hold Time (ms)](#hold-time-ms)
+     - [Mouse Speed (ms/step)](#mouse-speed-msstep)
+     - [Enable Smooth Movement](#enable-smooth-movement)
+     - [ADS Settings](#ads-settings)
+       - [Enable ADS (Right-Click)](#enable-ads-right-click)
+       - [ADS to Shoot Delay (ms)](#ads-to-shoot-delay-ms)
+     - [Enable Refined Movement (Anti-Cheat Noise)](#enable-refined-movement-anticheat-noise)
+     - [Compute Device](#compute-device)
+   - [Kill Hotkey Settings](#kill-hotkey-settings)
+     - [Current Exit Hotkey](#current-exit-hotkey)
+     - [Set New Exit Hotkey](#set-new-exit-hotkey)
+4. [Logging Tab](#logging-tab)
+   - [Set Logging Level](#set-logging-level)
+   - [View Log](#view-log)
+5. [Use Cases](#use-cases)
+6. [Troubleshooting](#troubleshooting)
+7. [Contact Support](#contact-support)
+
+---
+
+## **Introduction**
+
+The **Aimbot Application** integrates YOLO (You Only Look Once) object detection with Mouse Anywhere functionality to provide an automated aiming system. This tool is designed to assist users in various applications, such as gaming, where precise mouse control is beneficial. The application offers a range of settings to customize its behavior according to individual preferences and requirements.
+
+---
+
+## **Controls Tab**
+
+The **Controls** tab provides essential buttons to manage the aimbot's operation.
+
+- **Start Aimbot:** Initiates the aimbot functionality. Ensure that a YOLOv8 model is loaded before starting.
+  
+- **Stop Aimbot:** Halts the aimbot's operation. This is useful when you need to pause or terminate the aimbot temporarily.
+  
+- **Test Mouse Move:** Moves the mouse cursor to a predefined position (e.g., coordinates (100, 100)) to verify that mouse movement functionality is working correctly.
+
+**Reminder:** Some games, such as Roblox, may not allow direct `SetCursorPos` operations in true fullscreen mode. To prevent forced mouse resets, it is recommended to use windowed or borderless window modes.
+
+---
+
+## **Settings Tab**
+
+The **Settings** tab allows you to configure various aspects of the aimbot, including YOLO detection parameters and Mouse Anywhere settings.
+
+### **YOLO Overlay Settings**
+
+These settings control how the YOLO model detects objects and interacts with the overlay.
+
+#### **Confidence Threshold**
+
+- **Description:** Determines the minimum confidence score required for a detection to be considered valid.
+- **Adjustment:** Slider ranging from 0.0 to 1.0 (default: 0.5).
+- **Use Case:** Increase the threshold to reduce false positives or decrease it to detect more objects, including less certain detections.
+
+#### **Maximum Detections**
+
+- **Description:** Sets the maximum number of objects the model will detect in a single frame.
+- **Adjustment:** Slider ranging from 10 to 200 (default: 100).
+- **Enable Maximum Detections:** Checkbox to enable or disable this limit.
+- **Use Case:** Limit detections to improve performance or handle scenarios with numerous objects.
+
+#### **Enable Maximum Detections**
+
+- **Description:** Toggles the enforcement of the maximum detections limit.
+- **Use Case:** Disable to allow the model to detect an unrestricted number of objects, useful in environments with few targets.
+
+#### **Easing Type**
+
+- **Description:** Defines the interpolation method used for smooth mouse movements.
+- **Options:** Linear, Quadratic, Sinusoidal, Cubic, Exponential.
+- **Use Case:** Choose an easing type that best suits your preference for mouse movement smoothness.
+
+#### **Select Monitor**
+
+- **Description:** Allows you to choose which monitor the aimbot will monitor and interact with.
+- **Options:** Dropdown listing all connected monitors with their resolutions.
+- **Use Case:** Useful in multi-monitor setups to target a specific display.
+
+#### **Selected Model**
+
+- **Description:** Displays the path of the currently loaded YOLOv8 model.
+- **Use Case:** Verify which model is active or confirm that a model has been loaded.
+
+#### **Presets**
+
+- **Description:** Quick configuration buttons to apply predefined settings.
+- **Options:** Default, Fast, Smooth.
+- **Use Case:** Easily switch between different performance and smoothness configurations based on your needs.
+
+#### **Partial/Downscale Capture**
+
+- **Enable Partial Capture:**
+  - **Description:** Captures only a specified sub-region of the screen for detection.
+  - **Use Case:** Focus detection on a particular area to improve performance or target specific regions.
+  
+- **Enable Downscale Capture:**
+  - **Description:** Reduces the resolution of the captured image before running YOLO inference.
+  - **Use Case:** Enhance performance by processing smaller images, at the cost of detection accuracy.
+
+#### **Bounding Box Colors**
+
+- **Description:** Allows customization of the colors used for bounding boxes around detected objects.
+- **Use Case:** Differentiate object classes by assigning unique colors, improving visual clarity.
+
+#### **Ignore Classes**
+
+- **Description:** Enables you to exclude specific object classes from detection.
+- **Use Case:** Prevent the aimbot from targeting non-relevant objects, reducing unnecessary mouse movements.
+
+#### **Class Priority**
+
+- **Description:** Assigns priority levels to different object classes, determining which objects are targeted first.
+- **Use Case:** Prioritize critical targets over less important ones to optimize the aimbot's effectiveness.
+
+#### **Select YOLOv8 Model**
+
+- **Description:** Button to load a YOLOv8 `.pt` model file.
+- **Use Case:** Choose a specific model tailored to your detection needs, such as models trained for particular object classes.
+
+### **Mouse Anywhere Settings**
+
+These settings control how the mouse behaves in response to detections.
+
+#### **Strength**
+
+- **Description:** Determines the strength of the mouse movement.
+- **Adjustment:** Slider ranging from 1 to 100 (default: 50).
+- **Use Case:** Adjust the aggressiveness of mouse movements towards targets.
+
+#### **Hold Time (ms)**
+
+- **Description:** Sets the duration (in milliseconds) the mouse button is held down after movement.
+- **Adjustment:** Slider ranging from 50 to 1000 ms (default: 300 ms).
+- **Use Case:** Control how long the mouse button remains pressed during an action, affecting click precision.
+
+#### **Mouse Speed (ms/step)**
+
+- **Description:** Determines the speed of the mouse movement steps.
+- **Adjustment:** Slider ranging from 1 to 20 ms/step (default: 5 ms/step).
+- **Use Case:** Balance between smoothness and responsiveness of mouse movements.
+
+#### **Enable Smooth Movement**
+
+- **Description:** Toggles smooth mouse movements to prevent abrupt cursor jumps.
+- **Use Case:** Enhance the natural feel of mouse movements, reducing detection by anti-cheat systems.
+
+#### **ADS Settings**
+
+- **Enable ADS (Right-Click):**
+  - **Description:** Enables automatic right-click actions upon detection.
+  - **Use Case:** Useful in scenarios where a right-click is required after targeting, such as aiming down sights (ADS) in games.
+  
+- **ADS to Shoot Delay (ms):**
+  - **Description:** Sets the delay between ADS (right-click) and shooting (left-click).
+  - **Adjustment:** Entry field to input delay in milliseconds (default: 200 ms).
+  - **Use Case:** Synchronize right and left-click actions for smoother operation.
+
+#### **Enable Refined Movement (Anti-Cheat Noise)**
+
+- **Description:** Adds small random offsets to mouse movements to mimic natural behavior.
+- **Use Case:** Reduce the likelihood of detection by anti-cheat systems by avoiding perfectly consistent mouse movements.
+
+#### **Compute Device**
+
+- **Description:** Selects the hardware device used for YOLO inference.
+- **Options:** CPU, GPU.
+- **Use Case:** Utilize GPU for faster processing if available; otherwise, default to CPU.
+
+### **Kill Hotkey Settings**
+
+Manage the hotkeys used to control the application.
+
+#### **Current Exit Hotkey**
+
+- **Description:** Displays the currently set hotkey for exiting the application.
+- **Use Case:** Quickly identify the hotkey used to terminate the aimbot.
+
+#### **Set New Exit Hotkey**
+
+- **Description:** Allows you to define a new hotkey combination for exiting the application.
+- **Use Case:** Customize the exit hotkey to a combination that is convenient and unlikely to be triggered accidentally.
+
+---
+
+## **Logging Tab**
+
+The **Logging** tab provides tools to manage and view application logs, aiding in troubleshooting and monitoring.
+
+### **Set Logging Level**
+
+- **Description:** Adjusts the verbosity of the application's logging.
+- **Options:** None, Error, Info, Debug.
+- **Use Case:** 
+  - **None:** Disable logging.
+  - **Error:** Log only error messages.
+  - **Info:** Log informational messages and errors.
+  - **Debug:** Log detailed debugging information, useful for in-depth troubleshooting.
+
+### **View Log**
+
+- **Description:** Opens the log file (`aimbot_app.log`) in the default text editor.
+- **Use Case:** Review past activities, errors, and debug information to understand the application's behavior or diagnose issues.
+
+---
+
+## **Use Cases**
+
+Understanding how to effectively utilize the Aimbot Application can enhance your experience in various scenarios. Below are some common use cases:
+
+1. **Gaming Enhancement:**
+   - **Scenario:** In first-person shooter games, precise aiming can provide a competitive edge.
+   - **Usage:** Configure the aimbot to detect enemy players and automatically aim towards them, improving accuracy and reaction times.
+
+2. **Automated Object Interaction:**
+   - **Scenario:** In simulation or strategy games, interacting with multiple objects efficiently is crucial.
+   - **Usage:** Set the aimbot to target and interact with specific objects, streamlining gameplay actions.
+
+3. **Screen Monitoring:**
+   - **Scenario:** Monitoring specific regions of the screen for particular objects or activities.
+   - **Usage:** Use partial capture to focus on a region of interest, such as monitoring notifications or alerts.
+
+4. **Accessibility Assistance:**
+   - **Scenario:** Users with limited dexterity may benefit from automated mouse movements.
+   - **Usage:** Configure smooth and refined movements to assist in navigating interfaces or games.
+
+---
+
+## **Troubleshooting**
+
+If you encounter issues while using the Aimbot Application, refer to the following troubleshooting tips:
+
+1. **No Detections Displayed:**
+   - **Solution:** 
+     - Ensure a YOLOv8 model is properly loaded.
+     - Check the confidence threshold; lowering it may help detect more objects.
+     - Verify that the selected monitor and capture settings are correct.
+
+2. **Application Not Starting:**
+   - **Solution:** 
+     - Confirm that all required dependencies are installed.
+     - Check the log file for error messages by navigating to the **Logging** tab and selecting **View Log**.
+
+3. **Mouse Movements Not Smooth:**
+   - **Solution:** 
+     - Enable the **Enable Smooth Movement** option.
+     - Adjust the **Mouse Speed** and **Strength** sliders for optimal performance.
+
+4. **Hotkeys Not Responding:**
+   - **Solution:** 
+     - Ensure that the hotkey combinations do not conflict with other system or application shortcuts.
+     - Reconfigure the hotkeys in the **Kill Hotkey Settings** section.
+
+5. **Performance Issues:**
+   - **Solution:** 
+     - If using CPU for inference, consider switching to GPU if available for better performance.
+     - Disable unnecessary features like partial capture or high maximum detections to reduce processing load.
+
+6. **Error Messages in Logs:**
+   - **Solution:** 
+     - Access the logs via the **Logging** tab.
+     - Review the error messages and seek assistance if needed, providing the log details for context.
+
+---
+
+## **Contact Support**
+
+If you require further assistance or have feedback regarding the Aimbot Application, please reach out through the following channels:
+
+- **GitHub Repository:** [https://github.com/Wuhpondiscord/models](https://github.com/Wuhpondiscord/models)
+- **Email:** support@aimbotapp.com
+- **Community Forums:** [Aimbot App Forums](https://forums.aimbotapp.com)
+
+Ensure to provide detailed information about your issue, including screenshots and log excerpts, to facilitate effective support.
+
+---
+
+**Thank you for using the Aimbot Application!** We hope this guide helps you configure and utilize the tool effectively. For updates and more information, stay connected with our official channels.
