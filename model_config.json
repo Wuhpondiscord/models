@@ -16,8 +16,6 @@
           "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov3-tinyu.pt"
         }
       ],
-      "classification": [],
-      "pose": [],
       "segmentation": [],
       "obb": [],
       "world": [],
@@ -82,8 +80,6 @@
           "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov5xu.pt"
         }
       ],
-      "classification": [],
-      "pose": [],
       "segmentation": [],
       "obb": [],
       "world": [],
@@ -114,54 +110,6 @@
         {
           "filename": "yolov8x.pt",
           "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov8x.pt"
-        }
-      ],
-      "classification": [
-        {
-          "filename": "yolov8n-cls.pt",
-          "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov8n-cls.pt"
-        },
-        {
-          "filename": "yolov8s-cls.pt",
-          "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov8s-cls.pt"
-        },
-        {
-          "filename": "yolov8m-cls.pt",
-          "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov8m-cls.pt"
-        },
-        {
-          "filename": "yolov8l-cls.pt",
-          "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov8l-cls.pt"
-        },
-        {
-          "filename": "yolov8x-cls.pt",
-          "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov8x-cls.pt"
-        }
-      ],
-      "pose": [
-        {
-          "filename": "yolov8n-pose.pt",
-          "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov8n-pose.pt"
-        },
-        {
-          "filename": "yolov8s-pose.pt",
-          "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov8s-pose.pt"
-        },
-        {
-          "filename": "yolov8m-pose.pt",
-          "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov8m-pose.pt"
-        },
-        {
-          "filename": "yolov8l-pose.pt",
-          "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov8l-pose.pt"
-        },
-        {
-          "filename": "yolov8x-pose.pt",
-          "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov8x-pose.pt"
-        },
-        {
-          "filename": "yolov8x-pose-p6.pt",
-          "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov8x-pose-p6.pt"
         }
       ],
       "segmentation": [
@@ -345,8 +293,6 @@
           "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov9e.pt"
         }
       ],
-      "classification": [],
-      "pose": [],
       "segmentation": [
         {
           "filename": "yolov9c-seg.pt",
@@ -392,8 +338,6 @@
           "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov10b.pt"
         }
       ],
-      "classification": [],
-      "pose": [],
       "segmentation": [],
       "obb": [],
       "world": [],
@@ -426,26 +370,26 @@
           "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11x.pt"
         }
       ],
-      "classification": [
+      "segmentation": [
         {
-          "filename": "yolo11n-cls.pt",
-          "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n-cls.pt"
+          "filename": "yolo11l-seg.pt",
+          "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11l-seg.pt"
         },
         {
-          "filename": "yolo11s-cls.pt",
-          "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11s-cls.pt"
+          "filename": "yolo11m-seg.pt",
+          "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11m-seg.pt"
         },
         {
-          "filename": "yolo11m-cls.pt",
-          "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11m-cls.pt"
+          "filename": "yolo11n-seg.pt",
+          "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n-seg.pt"
         },
         {
-          "filename": "yolo11l-cls.pt",
-          "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11l-cls.pt"
+          "filename": "yolo11s-seg.pt",
+          "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11s-seg.pt"
         },
         {
-          "filename": "yolo11x-cls.pt",
-          "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11x-cls.pt"
+          "filename": "yolo11x-seg.pt",
+          "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11x-seg.pt"
         }
       ],
       "obb": [
@@ -468,50 +412,6 @@
         {
           "filename": "yolo11x-obb.pt",
           "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11x-obb.pt"
-        }
-      ],
-      "pose": [
-        {
-          "filename": "yolo11l-pose.pt",
-          "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11l-pose.pt"
-        },
-        {
-          "filename": "yolo11m-pose.pt",
-          "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11m-pose.pt"
-        },
-        {
-          "filename": "yolo11n-pose.pt",
-          "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n-pose.pt"
-        },
-        {
-          "filename": "yolo11s-pose.pt",
-          "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11s-pose.pt"
-        },
-        {
-          "filename": "yolo11x-pose.pt",
-          "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11x-pose.pt"
-        }
-      ],
-      "segmentation": [
-        {
-          "filename": "yolo11l-seg.pt",
-          "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11l-seg.pt"
-        },
-        {
-          "filename": "yolo11m-seg.pt",
-          "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11m-seg.pt"
-        },
-        {
-          "filename": "yolo11n-seg.pt",
-          "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n-seg.pt"
-        },
-        {
-          "filename": "yolo11s-seg.pt",
-          "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11s-seg.pt"
-        },
-        {
-          "filename": "yolo11x-seg.pt",
-          "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11x-seg.pt"
         }
       ],
       "world": [],
