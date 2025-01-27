@@ -1,0 +1,46 @@
+# {{MODEL_NAME}}
+
+## Model Overview
+
+**Architecture:** {{MODEL_ARCH}}  
+**Training Epochs:** {{EPOCHS}}  
+**Batch Size:** {{BATCH_SIZE}}  
+**Optimizer:** {{OPTIMIZER}}  
+**Learning Rate:** {{LEARNING_RATE}}  
+**Data Augmentation Level:** {{DATA_AUG}}
+
+## Training Metrics
+
+- **mAP@0.5:** {{FINAL_MAP50}}
+
+## Class IDs
+
+{{CLASS_IDS}}
+
+## Datasets Used
+
+{{DATASETS_USED}}
+
+## Class Image Counts
+
+{{CLASS_IMAGE_COUNTS}}
+
+## Description
+
+This model was trained using the {{MODEL_ARCH}} architecture on a custom dataset. The training process involved {{EPOCHS}} epochs with a batch size of {{BATCH_SIZE}}. The optimizer used was **{{OPTIMIZER}}** with an initial learning rate of {{LEARNING_RATE}}. Data augmentation was set to the **{{DATA_AUG}}** level to enhance model robustness.
+
+## Usage
+
+To use this model for inference, follow the instructions below:
+
+```python
+from ultralytics import YOLO
+
+# Load the trained model
+model = YOLO('best.pt')
+
+# Perform inference on an image
+results = model('path_to_image.jpg')
+
+# Display results
+results.show()
