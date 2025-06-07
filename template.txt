@@ -44,3 +44,12 @@ results = model('path_to_image.jpg')
 
 # Display results
 results.show()
+# Example for CLI inference (assuming Ultralytics YOLO package installed)
+# For Detection/Segmentation/OBB tasks:
+yolo predict model={{MODEL_URL}} source=path/to/your/image.jpg
+
+# For Classification tasks:
+# yolo classify predict model={{MODEL_URL}} source=path/to/your/image.jpg
+
+# For Keypoint (Pose Estimation) tasks:
+# yolo pose predict model={{MODEL_URL}} source=path/to/your/image.jpg
