@@ -12,6 +12,7 @@
 ## Training Metrics
 
 - **mAP@0.5:** {{FINAL_MAP50}}
+- **mAP@0.5:0.95:** {{FINAL_MAP5095}}
 
 ## Class IDs
 
@@ -27,7 +28,7 @@
 
 ## Description
 
-This model was trained using the {{MODEL_ARCH}} architecture on a custom dataset. The training process involved {{EPOCHS}} epochs with a batch size of {{BATCH_SIZE}}. The optimizer used was **{{OPTIMIZER}}** with an initial learning rate of {{LEARNING_RATE}}. Data augmentation was set to the **{{DATA_AUG}}** level to enhance model robustness.
+This model was trained using the **{{MODEL_ARCH}}** architecture on a custom dataset. The training process involved **{{EPOCHS}}** epochs with a batch size of **{{BATCH_SIZE}}**. The optimizer used was **{{OPTIMIZER}}** with an initial learning rate of **{{LEARNING_RATE}}**. Data augmentation was set to **{{DATA_AUG}}** to enhance model robustness.
 
 ## Usage
 
@@ -44,7 +45,7 @@ results = model('path_to_image.jpg')
 
 # Display results
 results.show()
-# Example for CLI inference (assuming Ultralytics YOLO package installed)
+
 # For Detection/Segmentation/OBB tasks:
 yolo predict model={{MODEL_URL}} source=path/to/your/image.jpg
 
